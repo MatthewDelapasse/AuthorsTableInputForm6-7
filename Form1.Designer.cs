@@ -45,6 +45,8 @@ namespace AuthorsTableInputForm6_7
             this.btnDone = new System.Windows.Forms.Button();
             this.btnHelp = new System.Windows.Forms.Button();
             this.hlpAuthors = new System.Windows.Forms.HelpProvider();
+            this.btnFirst = new System.Windows.Forms.Button();
+            this.btnLast = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -111,7 +113,7 @@ namespace AuthorsTableInputForm6_7
             // 
             // btnPrevious
             // 
-            this.btnPrevious.Location = new System.Drawing.Point(120, 151);
+            this.btnPrevious.Location = new System.Drawing.Point(124, 151);
             this.btnPrevious.Margin = new System.Windows.Forms.Padding(2);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(88, 24);
@@ -122,7 +124,7 @@ namespace AuthorsTableInputForm6_7
             // 
             // btnNext
             // 
-            this.btnNext.Location = new System.Drawing.Point(239, 151);
+            this.btnNext.Location = new System.Drawing.Point(230, 151);
             this.btnNext.Margin = new System.Windows.Forms.Padding(2);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(77, 24);
@@ -208,11 +210,33 @@ namespace AuthorsTableInputForm6_7
             this.btnHelp.UseVisualStyleBackColor = true;
             this.btnHelp.Click += new System.EventHandler(this.btnHelp_Click);
             // 
+            // btnFirst
+            // 
+            this.btnFirst.Location = new System.Drawing.Point(40, 153);
+            this.btnFirst.Name = "btnFirst";
+            this.btnFirst.Size = new System.Drawing.Size(79, 22);
+            this.btnFirst.TabIndex = 15;
+            this.btnFirst.Text = "|< First";
+            this.btnFirst.UseVisualStyleBackColor = true;
+            this.btnFirst.Click += new System.EventHandler(this.btnFirst_Click);
+            // 
+            // btnLast
+            // 
+            this.btnLast.Location = new System.Drawing.Point(312, 151);
+            this.btnLast.Name = "btnLast";
+            this.btnLast.Size = new System.Drawing.Size(79, 24);
+            this.btnLast.TabIndex = 16;
+            this.btnLast.Text = "Last >|";
+            this.btnLast.UseVisualStyleBackColor = true;
+            this.btnLast.Click += new System.EventHandler(this.btnLast_Click);
+            // 
             // frmAuthors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(442, 279);
+            this.Controls.Add(this.btnLast);
+            this.Controls.Add(this.btnFirst);
             this.Controls.Add(this.btnHelp);
             this.Controls.Add(this.btnDone);
             this.Controls.Add(this.btnDelete);
@@ -260,6 +284,8 @@ namespace AuthorsTableInputForm6_7
         private System.Windows.Forms.Button btnDone;
         private System.Windows.Forms.Button btnHelp;
         private System.Windows.Forms.HelpProvider hlpAuthors;
+        private System.Windows.Forms.Button btnFirst;
+        private System.Windows.Forms.Button btnLast;
     }
 }
 
